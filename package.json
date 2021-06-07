@@ -1,0 +1,67 @@
+{
+  "_from": "panzoom@^9.4.2",
+  "_id": "panzoom@9.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-sQLr0t6EmNFXpZHag0HQVtOKqF9xjF7iZdgWg3Ss1o7uh2QZLvcrz7S0Cl8M0d2TkPZ69JfPJdknXN3I0e/2aQ==",
+  "_location": "/panzoom",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "panzoom@^9.4.2",
+    "name": "panzoom",
+    "escapedName": "panzoom",
+    "rawSpec": "^9.4.2",
+    "saveSpec": null,
+    "fetchSpec": "^9.4.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/panzoom/-/panzoom-9.4.2.tgz",
+  "_shasum": "5b3ebdb72efbedfbd51e09bca6134248ad8ccad7",
+  "_spec": "panzoom@^9.4.2",
+  "_where": "E:\\工作\\vue1",
+  "author": {
+    "name": "Andrei Kashcha"
+  },
+  "bugs": {
+    "url": "https://github.com/anvaka/panzoom/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "amator": "^1.1.0",
+    "ngraph.events": "^1.2.1",
+    "wheel": "^1.0.0"
+  },
+  "deprecated": false,
+  "description": "Extensible, mobile friendly pan and zoom framework (supports DOM and SVG).",
+  "devDependencies": {
+    "browserify": "^16.5.1",
+    "eslint": "^7.13.0",
+    "jsdom": "^16.3.0",
+    "tap": "^14.10.8",
+    "uglify-js": "^3.10.0"
+  },
+  "homepage": "https://github.com/anvaka/panzoom#readme",
+  "keywords": [
+    "dom",
+    "svg",
+    "pan",
+    "zoom"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "panzoom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anvaka/panzoom.git"
+  },
+  "scripts": {
+    "build": "browserify -s panzoom ./index.js > dist/panzoom.js && uglifyjs dist/panzoom.js > dist/panzoom.min.js",
+    "start": "npm run build",
+    "test": "tap test/*.js"
+  },
+  "version": "9.4.2"
+}
